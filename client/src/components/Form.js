@@ -18,7 +18,7 @@ export default function Form() {
   const listDepartments = async () => {
     const result = await axios({
       method : "GET",
-      url : "http://localhost:5000/departments"
+      url : "http://13.212.8.243:5000/departments"
     })
     setDepartments(result.data.data)
   }
@@ -26,7 +26,7 @@ export default function Form() {
   const listJabatanInDep = async (id) => {
     const result = await axios({
       method : "GET",
-      url : "http://localhost:5000/departments/"+id
+      url : "http://13.212.8.243:5000/departments/"+id
     })
     setJabatan(result.data.data.Jabatans)
   }
@@ -48,7 +48,7 @@ export default function Form() {
     e.preventDefault()
     await axios({
       method : "POST",
-      url : "http://localhost:5000/karyawan/",
+      url : "http://13.212.8.243:5000/karyawan/",
       data : formObj
     })
     navigate("/karyawan", { replace: true });

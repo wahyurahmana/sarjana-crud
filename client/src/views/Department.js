@@ -23,7 +23,7 @@ export default function ListDepartment() {
   const listDepartments = async () => {
     const result = await axios({
       method : "GET",
-      url : "http://localhost:5000/departments"
+      url : "http://13.212.8.243:5000/departments"
     })
     setDepartments(result.data.data)
     setLoading(false)

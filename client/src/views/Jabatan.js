@@ -21,7 +21,7 @@ export default function ListJabatan() {
   const listDepartments = async () => {
     const result = await axios({
       method : "GET",
-      url : "http://localhost:5000/jabatan"
+      url : "http://13.212.8.243:5000/jabatan"
     })
     setJabatan(result.data.data)
     setLoading(false)

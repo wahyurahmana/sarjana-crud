@@ -91,7 +91,8 @@ class Controller {
         age: req.body.age,
         gender: req.body.gender,
         tanggal_lahir: req.body.tanggal_lahir,
-        alamat: req.body.alamat
+        alamat: req.body.alamat,
+        name: req.body.name,
       }
       const result = await Karyawan.update(data, {
         where: {

@@ -24,7 +24,7 @@ export default function ListKaryawan() {
   const listKaryawan = async () => {
     const result = await axios({
       method : "GET",
-      url : "http://localhost:5000/karyawan"
+      url : "http://13.212.8.243:5000/karyawan"
     })
     setKaryawan(result.data.data)
     setLoading(false)
